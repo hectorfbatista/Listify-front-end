@@ -1,6 +1,6 @@
 # Listify front-end
 
-Projeto criado para o teste da empresa Phidelis de HTML, CSS, Angular e integração com o Node.
+Projeto criado para o teste da empresa Phidelis, foram usados as seguintes tecnologias para o projeto: Angular, HTML, CSS, Jasmine e Karma para testes unitários e integração com o Node.
 
 ## Iniciando o projeto
 
