@@ -1,0 +1,33 @@
+.card-task {
+  display: inline-grid;
+  align-content: space-between;
+  width: 360px;
+  height: 300px;
+  margin-bottom: 15px;
+
+  &.completed {
+    background-color: #00c8b3;
+  }
+
+  .delete {
+    display: flex;
+    justify-content: end;
+    width: inherit;
+
+    button {
+      background-color: #4e60f3;
+      margin: 5px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-task {
+    max-width: 360px;
+    width: -webkit-fill-available;
+  }
+}

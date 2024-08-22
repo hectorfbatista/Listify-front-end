@@ -1,0 +1,21 @@
+<div class="container">
+  <h1> Tarefas </h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="add-card">
+      <button mat-fab color="primary" matTooltip="Adicionar tarefa" routerLink="/new-task">
+        <mat-icon class="add">add</mat-icon>
+      </button> 
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-4" *ngFor="let task of tasks">
+      <app-card-task 
+        [card-title]="task.title" 
+        [card-description]="task.subTitle" 
+        [card-completed]="task.completed" 
+        (onDelete)="delete(task)"
+        (onCompleted)="completed(task)">
+      </app-card-task>
+    </div>
+  </div>
+</div>
